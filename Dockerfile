@@ -31,8 +31,7 @@ RUN mkdir $DATA_DIR && \
 	useradd -d $DATA_DIR -s /bin/bash $USER && \
 	chown -R $USER $DATA_DIR && \
 	ulimit -n 2048
-RUN mkdir -p /SNM2020/Saved/Logs
-    touch /SNM2020/Saved/Logs/SNM2020.log
+RUN mkdir -p /SNM2020/Saved/Logs && touch /SNM2020/Saved/Logs/SNM2020.log
          
 ADD /scripts/ /opt/scripts/
 RUN chmod -R 770 /opt/scripts/
