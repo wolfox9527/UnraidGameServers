@@ -107,6 +107,10 @@ chmod -R ${DATA_PERM} ${DATA_DIR}
 
 echo "---Starting Xvfb server---"
 screen -S Xvfb -d -m /opt/scripts/start-Xvfb.sh
+
+
+mkdir -p ${SERVER_DIR}/SNM2020/Saved/Logs/
+touch  ${SERVER_DIR}/SNM2020/Saved/Logs/SNM2020.log
 sleep 5
 
 echo "---Start Server---"
