@@ -52,15 +52,5 @@ fi
 
 echo "---Modify default configuration with env vars---"
 cd ${SERVER_DIR}
-echo $(cat default-config.json | jq ".bindPort=${GAME_PORT}") > default-config.json
-echo $(cat default-config.json | jq ".publicPort=${GAME_PORT}") > default-config.json
-echo $(cat default-config.json | jq ".a2s.port=${A2S_PORT}") > default-config.json
-echo $(cat default-config.json | jq ".rcon.port=${RCON_PORT}") > default-config.json
-echo $(cat default-config.json | jq ".rcon.password=\"${RCON_PASSWORD}\"") > default-config.json
-echo $(cat default-config.json | jq ".game.name=\"${GAME_NAME}\"") > default-config.json
-echo $(cat default-config.json | jq ".game.password=\"${GAME_PASSWORD}\"") > default-config.json
-echo $(cat default-config.json | jq ".game.passwordAdmin=\"${GAME_PASSWORD_ADMIN}\"") > default-config.json
-echo $(cat default-config.json | jq ".game.scenarioId=\"${GAME_SCENARIO_ID}\"") > default-config.json
-echo $(cat default-config.json | jq ".game.maxPlayers=${GAME_MAX_PLAYERS}") > default-config.json
 echo "---Start Server---"
 ./ArmaReforgerServer -config ${SERVER_DIR}/default-config.json -profile ${PROFILE_DIR} -maxFPS ${MAX_FPS} ${GAME_PARAMS}
