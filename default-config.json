@@ -10,13 +10,13 @@
   "rcon": {
     "address": "0.0.0.0",
     "port": 19999,
-    "password": "changethis",
+    "password": "admin112233",
     "permission": "admin"
   },
   "game": {
-    "name": "Arma Reforger Docker Server",
+    "name": "lazycat Arma Reforger Server",
     "password": "",
-    "passwordAdmin": "changethis",
+    "passwordAdmin": "admin112233",
     "admins": [],
     "scenarioId": "{ECC61978EDCC2B5A}Missions/23_Campaign.conf",
     "maxPlayers": 64,
