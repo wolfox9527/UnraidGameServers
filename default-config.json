@@ -19,21 +19,18 @@
     "passwordAdmin": "admin112233",
     "admins": [],
     "scenarioId": "{ECC61978EDCC2B5A}Missions/23_Campaign.conf",
-    "maxPlayers": 64,
+    "maxPlayers": 32,
     "visible": true,
-    "supportedPlatforms": [
-      "PLATFORM_PC",
-      "PLATFORM_XBL",
-      "PLATFORM_PSN"
-    ],
     "gameProperties": {
-      "serverMaxViewDistance": 2500,
+      "serverMaxViewDistance": 1600,
       "serverMinGrassDistance": 50,
-      "networkViewDistance": 1000,
+      "networkViewDistance": 1500,
       "disableThirdPerson": false,
       "fastValidation": true,
       "battlEye": true,
-      "missionHeader": {}
+			"VONDisableUI": false,
+			"VONDisableDirectSpeechUI": false,
+			"VONCanTransmitCrossFaction": false
     },
     "mods": []
   }
